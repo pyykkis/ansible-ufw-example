@@ -1,0 +1,20 @@
+---
+- hosts: ufw
+  sudo: true
+
+  tasks:
+
+    - name: Set firewall default policy
+      ufw: state=enabled policy=reject
+
+    - name: Allow ssh from private network defined in Vagrantfile
+      ufw: rule=allow port=22 #Limit access to a specific host: src=192.168.1.6 or specific network: src=192.168.1.0/24
+
+    - name: Install nginx (access not allowed by firewall)
+      apt: pkg=nginx state=present update_cache=yes
+      notify: restart nginx
+
+  handlers:
+
+    - name: restart nginx
+      service: name=nginx state=restarted
