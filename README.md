@@ -26,5 +26,5 @@ and is a major PITA when debugging distributed systems [1], [2].
 
 References:
 
-[1]: [Why Firewall Reject Rules Are Better Than Firewall Drop Rules](http://www.chrisbrenton.org/2009/07/why-firewall-reject-rules-are-better-than-firewall-drop-rules/)
+[1]: [Why Firewall Reject Rules Are Better Than Firewall Drop Rules](http://www.chrisbrenton.org/2009/07/why-firewall-reject-rules-are-better-than-firewall-drop-rules/)  
 [2]: [Drop versus Reject](http://www.chiark.greenend.org.uk/~peterb/network/drop-vs-reject)
