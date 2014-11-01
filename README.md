@@ -8,7 +8,7 @@
 
 ## Discussion
 
-In this example, ansible and vagrant is used to provision precise64 box. Ansible sets up following services
+In this example, ansible and vagrant are used to provision precise64 box. Ansible sets up following services
 
 - ufw
   - `reject` as a default policy
@@ -16,7 +16,7 @@ In this example, ansible and vagrant is used to provision precise64 box. Ansible
 - nginx
   - ports 80 and 443 are rejected by ufw as no allow rule is specified for them
 
-Firewall settings can be explored from host machine using [nmap](http://nmap.org/), or simply by
+Firewall settings can be explored from the host machine using [nmap](http://nmap.org/), or simply by
 `curl 192.168.0.2`.
 
 More information about UFW in general and Ansible ufw module in particular can be found from [Ubuntu UncomplicatedFirewall documentation](https://wiki.ubuntu.com/UncomplicatedFirewall) and [Ansible UFW module documentation](http://docs.ansible.com/ufw_module.html)
